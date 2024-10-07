@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        GeneralSans: ["var(--font-generalsans)"],
+        GeneralSansMedium: ["var(--font-generalsans-medium)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        forground: "#eef0f2",
+        background: "#000000",
+        textColor: "#a3a3a3",
       },
     },
   },
