@@ -7,10 +7,16 @@ import WorkSection from "@/components/WorkSection/WorkSection";
 import LocomotiveScroll from "locomotive-scroll";
 
 export default function Home() {
-  const locomotiveScroll = new LocomotiveScroll();
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
 
   return (
-    <main className="bg-background text-white no-scrollbar">
+    <main
+      data-scroll-container
+      className="bg-background text-white no-scrollbar cursor-default"
+    >
       <CursorAnimation />
       <LandingPage />
       <WorkSection />

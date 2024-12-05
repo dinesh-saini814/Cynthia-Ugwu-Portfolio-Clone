@@ -20,9 +20,9 @@ const CursorAnimation = () => {
         target?.closest("a") || target?.closest("button");
       // using the GSAP power to animate some properties
       gsap.to(cursor, {
-        x: x + 3,
-        y: y + 3,
-        duration: 0.7,
+        x: x + -10,
+        y: y + -10,
+        duration: 1,
         ease: "power4",
 
         // opacity: isTargetLinkOrBtn ? 0.6 : 1,
@@ -40,7 +40,7 @@ const CursorAnimation = () => {
   return (
     <div
       ref={cursorRef}
-      className="w-3 h-3 rounded-full bg-white z-0 cursor select-none pointer-events-none fixed top-0 left-0"
+      className="w-3 h-3 rounded-full bg-white z-0 cursor select-none pointer-events-none fixed top-0 left-0 cursor-default"
     ></div>
   );
 };

@@ -1,19 +1,45 @@
 "use client";
-
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import useGsapAnimation from "../Animation/useGsapAnimation";
 
 const LandingPage = () => {
-  const headingRef = useRef(null);
+  const headingRef = useRef([]);
+  const textRef = useRef([]);
+  const footerRef = useRef(null);
 
-  var tl = gsap.timeline();
+  useGsapAnimation(() => {
+    const tl = gsap.timeline();
+
+    tl.from(headingRef.current, {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+      ease: [0.6, 0.05, -0.01, 0.9],
+      stagger: 0.1,
+      delay: 1, // You can add a delay for coordinated animation with Navbar
+    });
+
+    tl.from(textRef.current, {
+      y: -30,
+      duration: 0.5,
+      opacity: 0,
+      // ease: [0.6, 0.05, -0.01, 0.9],
+      stagger: 0.1,
+    });
+
+    tl.from(footerRef.current, {
+      opacity: 0,
+      duration: 0.5,
+    });
+  });
 
   return (
     <div className=" h-[100vh] w-full">
       <div className=" flex leading-none flex-col uppercase ml-5 sm:ml-9 pt-5 sm:pt-8 ">
         <div className="w-fit overflow-hidden">
           <h1
-            ref={headingRef}
+            ref={(el) => (headingRef.current[0] = el)}
             className="sm:text-[8rem] text-[3.4rem] opacity-60 sm:tracking-[.3rem] "
           >
             product
@@ -23,23 +49,38 @@ const LandingPage = () => {
         </div> */}
         <div className="w-fit ">
           {" "}
-          <div className=" w-fit overflow-hidden">
-            <h1 className="sm:text-[8rem] text-[3.4rem] opacity-60 ml-14 sm:ml-32 sm:tracking-[.3rem]">
+          <div className=" w-fit overflow-hidden ">
+            <h1
+              ref={(el) => (headingRef.current[1] = el)}
+              className="sm:text-[8rem] text-[3.4rem] opacity-60 ml-14 sm:ml-32 sm:tracking-[.3rem]"
+            >
               Designer
             </h1>
           </div>
           <div className=" overflow-hidden ">
-            <h5 className="sm:text-[1rem] text-[.65rem] text-right sm:font-bold sm:tracking-normal tracking-widest sm:leading-10 leading-8">
+            <h5
+              ref={(el) => (headingRef.current[2] = el)}
+              className="sm:text-[1rem] text-[.65rem] text-right sm:font-bold sm:tracking-normal tracking-widest leading-8"
+            >
               BASED IN TORONTO
             </h5>
           </div>
         </div>
       </div>
       <div className="Small-headings text-right mt-20 sm:px-8 sm:py-6 py-7 px-5 text-sm sm:text-base uppercase">
-        <h5 className="">AVAILABLE FOR FULL TIME & FREELANCE</h5>
-        <h5 className="">WORK FROM SEP ‘24</h5>
+        <div className="overflow-hidden">
+          <h5 ref={(el) => (textRef.current[1] = el)} className="">
+            AVAILABLE FOR FULL TIME & FREELANCE
+          </h5>
+          <h5 ref={(el) => (textRef.current[0] = el)} className="">
+            WORK FROM SEP ‘24
+          </h5>
+        </div>
       </div>
-      <div className="hero-footer flex-between sm:px-8 px-5 text-[1.7vh] sm:text-[2.5vh] sm:mt-0 mt-48">
+      <div
+        ref={footerRef}
+        className="hero-footer flex-between sm:px-8 px-5 text-[1.7vh] sm:text-[2.5vh] sm:mt-0 mt-48"
+      >
         <div className="flex sm:gap-3 gap-1">
           <a href="#">
             PREVIOUSLY WORKED AT <br />

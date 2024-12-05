@@ -36,17 +36,17 @@ const FooterSection = () => {
           </span>
         </div>
       </div>
-      <div className="mt-32 sm:flex-between flex-c">
-        <div className="uppercase md:flex sm:gap-6 flex-between py-5">
-          <span className="">© 2024</span>
-          <span className="">4:21 AM ET</span>
-        </div>
-        <div className="border-t-[1px] border-white border-opacity-60 md:hidden block"></div>
-        <div className="uppercase flex gap-10">
+      <div className="mt-32 md:flex-between flex-c gap-2">
+        <div className="uppercase flex md:gap-11 flex-between text-sm md:justify-start">
           <a href="">linkedin</a>
           <a href="">x/twitter</a>
           <a href="">instagram</a>
           <a href="">youtube</a>
+        </div>
+        <div className="border-t-[1px] border-white border-opacity-60 md:hidden block"></div>
+        <div className="uppercase md:flex sm:gap-6 flex-between">
+          <span className="">© 2024</span>
+          <span className="">4:21 AM ET</span>
         </div>
       </div>
     </div>
