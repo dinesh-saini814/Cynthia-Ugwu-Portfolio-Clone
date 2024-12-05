@@ -31,7 +31,7 @@ visit site [https://cynthiaugwu.com/]
 
 <img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_desktop.png?raw=true" alt="screenshots_desktop" width="600"/>
 
-<img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_mobile.jpg?raw=true" alt="screenshots_mobile" width="600"/>
+<img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_mobile.jpg?raw=true" alt="screenshots_mobile" width="400"/>
 
 ## Learn More
 
