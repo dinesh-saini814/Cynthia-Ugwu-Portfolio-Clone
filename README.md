@@ -25,7 +25,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 Cynthia Ugwu
 visit site [https://cynthiaugwu.com/]
 
-## Screenshort
+## Screenshots
+![screenshots](https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot.png?raw=true)
+![screenshots_desktop]([https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot.png?raw=true](https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_desktop.png?raw=true))
+![screenshots_mobile]([https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot.png?raw=true](https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_mobile.jpg?raw=true))
+
 
 ## Learn More
 
