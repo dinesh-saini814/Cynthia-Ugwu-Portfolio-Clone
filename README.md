@@ -27,10 +27,10 @@ visit site [https://cynthiaugwu.com/]
 
 ## Screenshots
 
-<img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot.png?raw=true" alt="screenshots" width="600"/>
-
-<img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_desktop.png?raw=true" alt="screenshots_desktop" width="600"/>
-
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot.png?raw=true" alt="screenshot" width="48%"/>
+  <img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_desktop.png?raw=true" alt="screenshot_desktop" width="48%"/>
+</div>
 <img src="https://github.com/dinesh-saini814/Cynthia-Ugwu-Portfolio-Clone/blob/main/public/screenshorts/Screenshot_mobile.jpg?raw=true" alt="screenshots_mobile" width="400"/>
 
 ## Learn More
