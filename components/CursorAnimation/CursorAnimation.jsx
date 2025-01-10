@@ -35,7 +35,7 @@ const CursorAnimation = () => {
     //     opacity: 0,
     //   });
     // });
-  }, []);
+  }, [isTouchDevice]);
 
   return (
     <div
@@ -47,8 +47,8 @@ const CursorAnimation = () => {
 
 export default CursorAnimation;
 
-function circleFollower() {
-  window.addEventListener("mousemove", (e) => {
-    console.log(e.pageX, e.pageY);
-  });
-}
+// function circleFollower() {
+//   window.addEventListener("mousemove", (e) => {
+//     console.log(e.pageX, e.pageY);
+//   });
+// }
