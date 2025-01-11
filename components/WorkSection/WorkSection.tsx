@@ -1,5 +1,4 @@
 "use client";
-import ProjectHoverImage from "./ProjectHoverImage";
 import Data from "./Data";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -35,7 +34,6 @@ const WorkSection = () => {
             >
               <Image
                 className="w-full h-full  object-cover"
-                autoPlay
                 src="https://cynthiaugwu.com/images/cover/lucid-motors.webp"
                 alt="lucid motors"
                 width={400}
@@ -49,7 +47,6 @@ const WorkSection = () => {
             >
               <Image
                 className="w-full h-full  object-cover"
-                autoPlay
                 src="https://cynthiaugwu.com/images/cover/baron-capital.webp"
                 alt="baron capital"
                 width={400}
@@ -63,7 +60,6 @@ const WorkSection = () => {
             >
               <Image
                 className="w-full h-full  object-cover"
-                autoPlay
                 src="https://cynthiaugwu.com/images/cover/nfl.webp"
                 alt="nfl"
                 width={400}
@@ -77,7 +73,6 @@ const WorkSection = () => {
             >
               <Image
                 className="w-full h-full  object-cover"
-                autoPlay
                 src="https://cynthiaugwu.com/images/cover/placenew.webp"
                 alt="placenew"
                 width={400}
@@ -91,7 +86,6 @@ const WorkSection = () => {
             >
               <Image
                 className="w-full h-full  object-cover"
-                autoPlay
                 src="https://cynthiaugwu.com/images/cover/somos.webp"
                 alt="somos"
                 width={400}

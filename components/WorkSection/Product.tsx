@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 
-const Product = ({ item, mover, count }) => {
+interface Item {
+  title: string;
+  date: string;
+}
+
+interface ProductProps {
+  item: Item;
+  mover: (count: number) => void;
+  count: number;
+}
+
+const Product: React.FC<ProductProps> = ({ item, mover, count }) => {
   return (
     <div className="w-full py-10 border-t-[1px] border-opacity-50 md:h-[12rem]">
       <div

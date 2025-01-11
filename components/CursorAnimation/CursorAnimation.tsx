@@ -19,6 +19,7 @@ const CursorAnimation = () => {
       return;
     }
 
+    // @typescript-eslint/no-explicit-any
     const handleMouseMove = (e: { target: any; x: any; y: any }) => {
       const { target, x, y } = e;
       const isTargetLinkOrBtn =

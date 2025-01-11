@@ -1,4 +1,10 @@
-const ProjectHoverImage = ({ name, url, date }) => {
+interface ProjectHoverImageProps {
+  name: string;
+  url: string;
+  date: string;
+}
+// @typescript-eslint/no-unused-vars
+const ProjectHoverImage = ({ name, date }: ProjectHoverImageProps) => {
   return (
     <div className="second border-t-[1px] border-white w-[86vw] border-opacity-60">
       <div className=" flex-between md:my-10 my-5 relative">

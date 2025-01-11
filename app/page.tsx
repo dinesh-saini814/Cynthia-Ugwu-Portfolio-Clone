@@ -7,9 +7,8 @@ import WorkSection from "@/components/WorkSection/WorkSection";
 import { ReactLenis, useLenis } from "lenis/react";
 
 export default function Home() {
-  const lenis = useLenis(({ scroll }) => {
-    console.log(scroll);
-  });
+  // @typescript-eslint/no-unused-vars
+  const lenis = useLenis(({ scroll }) => {});
 
   return (
     <ReactLenis root>
