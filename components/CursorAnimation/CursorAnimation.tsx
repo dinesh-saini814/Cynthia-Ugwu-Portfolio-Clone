@@ -20,10 +20,11 @@ const CursorAnimation = () => {
     }
 
     // @typescript-eslint/no-explicit-any
-    const handleMouseMove = (e: { target: any; x: any; y: any }) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const { target, x, y } = e;
       const isTargetLinkOrBtn =
-        target?.closest("a") || target?.closest("button");
+        (target as Element)?.closest("a") ||
+        (target as Element)?.closest("button");
 
       gsap.to(cursor, {
         x: x - 10,

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import CursorAnimation from "@/components/CursorAnimation/CursorAnimation";
@@ -7,8 +8,9 @@ import WorkSection from "@/components/WorkSection/WorkSection";
 import { ReactLenis, useLenis } from "lenis/react";
 
 export default function Home() {
-  // @typescript-eslint/no-unused-vars
-  const lenis = useLenis(({ scroll }) => {});
+  const lenis = useLenis(({ scroll }) => {
+    // scroll
+  });
 
   return (
     <ReactLenis root>

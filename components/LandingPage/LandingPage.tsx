@@ -4,8 +4,8 @@ import { useRef } from "react";
 import useGsapAnimation from "../Animation/useGsapAnimation";
 
 const LandingPage = () => {
-  const headingRef = useRef([]);
-  const textRef = useRef([]);
+  const headingRef = useRef<(HTMLHeadingElement | null)[]>([]);
+  const textRef = useRef<(HTMLHeadingElement | null)[]>([]);
   const footerRef = useRef(null);
 
   useGsapAnimation(() => {
@@ -15,7 +15,7 @@ const LandingPage = () => {
       y: 100,
       duration: 1,
       opacity: 0,
-      ease: [0.6, 0.05, -0.01, 0.9],
+      ease: "[0.6, 0.05, -0.01, 0.9]",
       stagger: 0.1,
       delay: 1, // You can add a delay for coordinated animation with Navbar
     });
@@ -39,7 +39,9 @@ const LandingPage = () => {
       <div className=" flex leading-none flex-col uppercase ml-5 sm:ml-9 pt-5 sm:pt-8 ">
         <div className="w-fit overflow-hidden">
           <h1
-            ref={(el) => (headingRef.current[0] = el)}
+            ref={(el) => {
+              headingRef.current[0] = el;
+            }}
             className="sm:text-[8rem] text-[3.4rem] opacity-60 sm:tracking-[.3rem] "
           >
             product
@@ -51,7 +53,9 @@ const LandingPage = () => {
           {" "}
           <div className=" w-fit overflow-hidden ">
             <h1
-              ref={(el) => (headingRef.current[1] = el)}
+              ref={(el) => {
+                headingRef.current[1] = el;
+              }}
               className="sm:text-[8rem] text-[3.4rem] opacity-60 ml-14 sm:ml-32 sm:tracking-[.3rem]"
             >
               Designer
@@ -59,7 +63,9 @@ const LandingPage = () => {
           </div>
           <div className=" overflow-hidden ">
             <h5
-              ref={(el) => (headingRef.current[2] = el)}
+              ref={(el) => {
+                headingRef.current[2] = el;
+              }}
               className="sm:text-[1rem] text-[.65rem] text-right sm:font-bold sm:tracking-normal tracking-widest leading-8"
             >
               BASED IN TORONTO
@@ -69,10 +75,20 @@ const LandingPage = () => {
       </div>
       <div className="Small-headings text-right mt-20 sm:px-8 sm:py-6 py-7 px-5 text-sm sm:text-base uppercase">
         <div className="overflow-hidden">
-          <h5 ref={(el) => (textRef.current[1] = el)} className="">
+          <h5
+            ref={(el) => {
+              textRef.current[1] = el;
+            }}
+            className=""
+          >
             AVAILABLE FOR FULL TIME & FREELANCE
           </h5>
-          <h5 ref={(el) => (textRef.current[0] = el)} className="">
+          <h5
+            ref={(el) => {
+              textRef.current[0] = el;
+            }}
+            className=""
+          >
             WORK FROM SEP ‘24
           </h5>
         </div>
